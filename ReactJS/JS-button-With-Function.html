@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <script>
+           function createUI(){
+            var btndomElement = document.createElement("button")
+            btndomElement.innerText = "htmlButton"
+            document.querySelector("body").appendChild(btndomElement)
+
+            var ol = document.createElement("ol")
+            var li1 = document.createElement("li")
+            var li2 = document.createElement("li")
+            var li3 = document.createElement("li")
+            var li4 = document.createElement("li")
+
+            li1.innerText = "HTML"
+            li2.innerText = "CSS"
+            li3.innerText = "JavaScript"
+            li4.innerText = "ReactJS"
+
+            ol.appendChild(li1)
+            ol.appendChild(li2)
+            ol.appendChild(li3)
+            ol.appendChild(li4)
+
+            document.querySelector("body").appendChild(ol)
+           }
+
+           createUI()
+           createUI()
+           createUI()
+        </script>
+    </body>
+</html>
