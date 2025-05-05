@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            #cardDiv{
+                background-color:black;
+                color: white;
+                text-align:center;
+                width: 270px;
+                height: 370px;
+                padding: 7px;
+            }
+
+            #container{
+                display: flex;
+                justify-content: space-evenly;
+            }
+        </style>
+        <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+        <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+        <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    </head>
+
+    <body>
+        <div id="root"></div>
+        <script type="text/babel">
+            var card =(
+                <div id="cardDiv">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLHnxPRUYwIQ2DjpG9xPpYLKGICVPB-MUzuA&s" width="100%" height="330px"/>
+                    <h3>Chakri</h3>
+                 </div>);
+            
+            var container = (
+                <div id="container">
+                    {card}
+                    {card}
+                    {card}
+                    {card}
+                </div>
+            )
+            ReactDOM.render(container,document.getElementById("root"));
+        </script>
+    </body>
+</html>

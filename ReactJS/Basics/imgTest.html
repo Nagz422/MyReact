@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>P tag test</title>
+        <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+        <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    </head>
+
+    <body>
+        <div id="root"></div>
+        <script>
+            let imgte = React.createElement("img",{src:"https://media.gettyimages.com/id/166080748/vector/cricket-player-strikes-the-ball-for-six.jpg?s=612x612&w=gi&k=20&c=V-kwBs62Vum3JsjZTDYTsXeyvA1Q0-ECKwuq8m39hTg=",width:"200",height:"200"});
+            ReactDOM.render(imgte,document.querySelector("#root"));
+        </script>
+    </body>
+</html>

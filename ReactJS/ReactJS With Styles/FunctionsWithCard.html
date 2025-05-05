@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="./React-Style.css"/>
+        <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+        <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    </head>
+    <body>
+        <div id="root"></div>
+        <script>
+            function createDiv(username,imge){
+                var img = React.createElement("img",{src:imge,width:"100%",height:"200px"});
+                var h1 = React.createElement("h1",null,username);
+
+                var cardDiv = React.createElement("div",{style:{width:"400px",height:"612px",boxShadow:"0 0 10px block", textAlign:"center"}},[img,h1]);
+
+                return cardDiv;
+
+            }
+
+            function createContainer(){
+                const containerDiv = React.createElement("div",{style:{display:"flex",justifyContent:"space-evenly"}},[createDiv("Nagendra","https://www.shutterstock.com/image-photo/front-view-cricket-batsman-action-600nw-2341675921.jpg"),createDiv("Chakri","https://media.istockphoto.com/id/497568472/photo/boy-playing-cricket.jpg?s=612x612&w=0&k=20&c=l_5wcAKbTpnBqOb9tHOiyqVZmHJRmjz_3kxHpZRStfM="),createDiv("Smriti","https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUfC1LOLlpj3_HtdcidNcs2HEd77FtT6Bgdw&s"),createDiv("Prasad","https://media.gettyimages.com/id/499132649/photo/young-boy-cricket-sweep-shot.jpg?s=612x612&w=gi&k=20&c=d0xuLQcrho35k6cIutrHriEN2hMD3q-8z67rNu4Jrfo="),createDiv("Tilak","https://media.gettyimages.com/id/2184210258/photo/johannesburg-south-africa-tilak-varma-of-india-raises-his-bat-during-the-wonder-cement.jpg?s=612x612&w=gi&k=20&c=dOayYZ7T5pXrPLtFVYieMm0Pv_3t-FYVNbsoLlpoI0M=")])
+                return containerDiv;
+            }
+
+            ReactDOM.render(createContainer(),document.getElementById("root"))
+        </script>
+    </body>
+</html>

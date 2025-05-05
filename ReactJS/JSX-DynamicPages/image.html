@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+        <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+        <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    </head>
+
+    <body>
+        <div id="root"></div>
+        <script type="text/babel">
+            var h1 = <h1>Chakri</h1>
+            const image = <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLHnxPRUYwIQ2DjpG9xPpYLKGICVPB-MUzuA&s" width="300px" hight="200px"/>;
+
+            ReactDOM.render([image,h1],document.getElementById("root"));
+        </script>
+    </body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>P tag test</title>
+        <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+        <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    </head>
+
+    <body>
+        <div id="root"></div>
+        <script>
+            var img = React.createElement("img",{src:"https://media.istockphoto.com/id/497568472/photo/boy-playing-cricket.jpg?s=612x612&w=0&k=20&c=l_5wcAKbTpnBqOb9tHOiyqVZmHJRmjz_3kxHpZRStfM=", width:"100%",height:"250px"})
+            var h1 = React.createElement("h1",null,"Upcoming Crickter")
+            var cardDiv = React.createElement("div",{style:{width:"300px",height:"400px", boxShadow:"0 0 10px block",textAlign:"center"}},[img,h1])
+
+            const continerDiv = React.createElement("div",{style:{display:"flex",justifyContent:"space-evenly"}},[cardDiv,cardDiv,cardDiv,cardDiv])
+
+            ReactDOM.render(continerDiv,document.getElementById("root"));
+        </script>
+    </body>
+</html>
